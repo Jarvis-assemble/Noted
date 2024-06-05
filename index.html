@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+    <meta charset="utf-8" > <!-- http-equiv="refresh" content="30" refreshes every 30 seconds-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+<div class="Calculator">
+    <div class="container main-content">
+        <h1 class="heading">Savings</h1>
+        <h3 class="subheading">How long does it takes for me to reach My Goal?</h3>
+        
+          <form id="salaryForm"> 
+            <div class="input-group">
+                <label for="a1" class="input-group-text" id="q1">Monthly Salary: </label>
+                <input type="text" placeholder="Enter Salary" id="monthlySalary">
+              </div>
+
+              <div class="input-group">
+                <label for="a2" class="input-group-text" id="q2">Monthly Expense: </label>
+                <input type="text" placeholder="Enter Expense" id="monthlyExpense">
+              </div>
+
+              <button type="submit" class="btn btn-danger" id="calc">Calculate</button>
+            
+        </form>
+      </div>
+
+    <div class="table main-content">
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Monthly Salary</th>
+                    <th>Monthly Expense</th>
+                    <th>Monthly Saving</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
